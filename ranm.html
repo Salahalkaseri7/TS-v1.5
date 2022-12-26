@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    body{
+  background: #3399ff;
+}
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -10px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -50px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -100px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -200px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -300px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+    .card {
+      position: relative;
+      display: block;
+      height:70%;
+      width: 50%;
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin: 0 auto 40px auto;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,112,255,0.07);
+  }
+  .card > * {
+      position: relative;
+      z-index: 2;
+  }
+  .card img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin: auto;
+  }
+  .card .title {
+      font-size: 28px;
+      text-align: center;
+      font-family: var(--rubik);
+      font-weight: 500;
+      color: #495359;
+      margin-top: 5px;
+  }
+  .card .desc {
+      text-align: center;
+      color: #505b61;
+      margin-top: 3px;
+      font-family: var(--rubik);
+  }
+  .card button {
+      display: block;
+      width: 120px;
+      height: 40px;
+      border: none;
+      outline: none;
+      background: linear-gradient(120deg, #00a5ff, #005fff);
+      box-shadow: 0 5px 10px rgba(0,139,255,0.2);
+      border-radius: 20px;
+      margin: 20px auto 0 auto;
+      color: #fff;
+      transition: .5s;
+      font-family: var(--rubik);
+  }
+  .card button:hover {
+      transform: scale(0.9);
+  }
+  .card section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      background: #09f;
+  }
+  @keyframes animate {
+      0% {
+          background-position-x: 0;
+      }
+      100% {
+          background-position-x: 1000px;
+      }
+  }
+  @keyframes animate2 {
+      0% {
+          background-position-x: 0;
+      }
+      100% {
+          background-position-x: -1000px;
+      }
+  }
+  
+    button{
+      margin-top: 40px;
+      margin-left: 700px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding:10px;
+    }
+    button:hover{
+      background-color: black;
+      color: white;
+      transition: .5s;
+      cursor: pointer;
+    }
+    section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 500px;
+      overflow: hidden;
+      background: #09f;
+  }
+  section .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url("../img/wave.png");
+      background-size: 1000px 100px;
+  }
+  .wave.wave1 {
+      animation: animate 30s linear infinite;
+      bottom: 0;
+      opacity: 1;
+      animation-delay: 0s;
+      z-index: 4;
+  }
+  .wave.wave2 {
+      animation: animate2 15s linear infinite;
+      bottom: 10px;
+      opacity: 0.5;
+      animation-delay: -5s;
+      z-index: 3;
+  }
+  .wave.wave3 {
+      animation: animate 15s linear infinite;
+      bottom: 15px;
+      opacity: 0.2;
+      animation-delay: -2s;
+      z-index: 2;
+  }
+  .wave.wave4 {
+      animation: animate2 5s linear infinite;
+      bottom: 20px;
+      opacity: 0.7;
+      animation-delay: -5s;
+      z-index: 1;
+  }
+      </style>
+</head>
+<body>
+  <div class='ripple-background'>
+    <div class='circle xxlarge shade1'></div>
+    <div class='circle xlarge shade2'></div>
+    <div class='circle large shade3'></div>
+    <div class='circle mediun shade4'></div>
+    <div class='circle small shade5'></div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("container");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    <script src="js/ranm.js"></script>
+    <div class="card">
+      <section>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+    <h1>WHAT U NEED TO IMPROVE FOR ENHANCING YOUR TYPING SPEED?<h1>
+    <p style="text-align: center; color: rgb(14, 49, 131); font-size: x-large; font-family: 'Courier New', Courier, monospace;"><b>Take this questionnaire to find out!</b> </p>
+    <form id="quiz">
+      <h2>How long should you practice typing to get a good speed?</h2>
+      <label style="font-size: large; color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><input type="radio" name="q1" value="c1">
+       1 hours a day without focusing on accuracy
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q1" value="c2">
+        30 mins a day with focusing on accuracy
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q1" value="c3">
+       20 mins a day focusing on speed and accuracy (Both)
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q1" value="c4">
+        Not regular
+      </label><br />
+      <h2>What is the fastest typing speed u achieved?</h2>
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q2" value="c1">
+        40 wpm and over
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q2" value="c2">
+       60 wpm and over or higher
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q2" value="c3">
+        50 wpm and over
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q2" value="c4">
+        below 40 wpm 
+      </label><br />
+      <h2>How u usually type?</h2>
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q3" value="c1">
+        By looking towards keyboard
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q3" value="c2">
+        looking towards monitor/Screen
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q3" value="c3">
+      combination of both monitor/Screen and keybaord 
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q3" value="c4">
+        struggle to type even when looking on keyboard
+      </label><br />
+      <h2>Whats your posture while sitting during typing?</h2>
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q4" value="c1">
+        staight but no back support
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q4" value="c2">
+        Straight and proper posture but keybaord is not at proper height
+        /not aligned monitor Screen
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q4" value="c3">
+        Straight and proper comfort posture
+      </label><br />
+      <label style="font-size: large; color: aliceblue;"><input type="radio" name="q4" value="c4">
+        improper posture
+      </label><br />
+      <br>
+      <button type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+      <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+    </form>
+    <br>
+    <br>
+    <br>
+      <div style="color: rgb(7, 8, 19); font-family: Arial, Helvetica, sans-serif;" id="answer"><b>result will show up here!</b></div>
+      <br>
+      <br>
+      <button type="button"
+            onclick="backtohome()">
+           Back-To-Home</button>
+           <script>
+         function backtohome(){
+            document.location.href="index.html";
+         }
+           </script>
+</body>
+</div>
+</div>
+</html>

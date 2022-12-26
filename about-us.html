@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About-me</title>
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #232427;
+}
+
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+body .container .card {
+  position: relative;
+  min-width: 390px;
+  height: 490px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+body .container .card:nth-child(4) .box .content a {
+  background: #861bd7;
+}
+body .container .card:nth-child(5) .box .content a {
+  background: #17dff5;
+}
+body .container .card:nth-child(6) .box .content a {
+  background: #000000;
+}
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>QuickTest</h3>
+          <p>The actual idea to develop this project come from the communication accuracy or
+            time saving, just to save time of people throught this specticular thought... i decided
+            to make a project that when a user selects an accurate chellenge time duration,
+            the entered message of a person will be measured or analyzed through the software.</p>
+          <a href="#">TRY</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Tris game</h3>
+          <p>A tris game in which words will fall in a container at specified speed, and
+            you have to type that words before the drop in container if failed then game over!</p>
+          <a href="#">PLAY</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>History Section</h3>
+          <p>A history section where you can check the previous typing test result by date and time.</p>
+          <a href="#">CHECK</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>04</h2>
+          <h3>Chat_Bot</h3>
+          <p>Chat_Bot will help u and provide some better ways to enhance your typing speed & also u
+            can chat or use voice speech with bot for fun!</p>
+          <a href="#">ASK</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>05</h2>
+          <h3>Questionnaire</h3>
+          <p>Questionnaire will provide the optimized solution by asking some questions related to your
+            typing!</p>
+          <a href="#">ANSWER</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>06</h2>
+          <h3>Developer(ME)</h3>
+          <p>Interestingly, I have been a student of Poly Technic Computer branch and got introduced to programming
+            in my Third Sem of year And At MGM'S college of Engineering, Nanded. Since then, I started developing
+            Android Apps And Web Projects and pursuing my Bachelors in Computer Science and Engineering.
+            Today, I'm currently working on Self Projects and on the way of my roadmap to become a fullstack
+            DEV.</p>
+          <a href="#">SALAH ALKASERI</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
