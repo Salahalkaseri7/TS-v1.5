@@ -1,6 +1,6 @@
 // function to calculate the result of the survey
 function tabulateAnswers() {
-  document.getElementById("answer").style.color = "black";
+  document.getElementById("answer").style.color = "rgb(252, 11, 11)";
   document.getElementById("answer").style.fontWeight = "980";
     var c1score = 0;
     var c2score = 0;

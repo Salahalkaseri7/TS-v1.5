@@ -86,8 +86,10 @@
     .card {
       position: relative;
       display: block;
-      height:150rem;
-      width: 50%;
+      height:fit-content;
+      display:-ms-flexbox;
+      justify-content: center;
+      width: fit-content;
       background: #fff;
       border-radius: 20px;
       padding: 30px;
@@ -142,7 +144,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 90%;
+      height: 97%;
       background: #09f;
   }
   @keyframes animate {
@@ -313,10 +315,10 @@
     <br>
     <br>
     <br>
-      <div style="color: rgb(7, 8, 19); font-family: 'Tiro Devanagari Hindi', serif; border: solid white; border-radius: 7px; text-align: center;" id="answer"><b>result will show up here!</b></div>
+      <div style="margin-bottom:7rem; color: rgb(252, 11, 11); font-family: 'Tiro Devanagari Hindi', serif; border: solid rgb(0, 0, 0); border-radius: 7px; text-align: center; background-color: #fff;" id="answer"><b>result will show up here!</b></div>
       <br>
       <br>
-      <button type="button"
+      <button style="margin-bottom: -2rem;" type="button"
             onclick="backtohome()">
            Back-To-Home</button>
            <script>
