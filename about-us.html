@@ -144,13 +144,14 @@ body .container .card .box .content a:hover {
     border-radius:100%;
     width: 15rem;
     height: 15rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     object-position: top; 
   position: relative;
 }
 #apara{
   position: relative;
-  margin: 3rem 2rem 1rem 1rem;
+ margin: 1rem 1rem 4rem 1rem;
+ width: fit-content;
   border: solid rgb(0, 0, 0);
 text-align: center;
 color: rgb(0, 0, 0);
@@ -163,6 +164,45 @@ border-radius: 30px;
   height: 35rem;
   flex-direction: column;
 
+}
+body .cardabt {
+  position: relative;
+  min-width: 355px;
+  height: 507px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+body .cardabt .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .cardabt .box:hover {
+  transform: translateY(-50px);
+}
+
+body .cardabt .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
 }
 </style>
 </head>
@@ -239,6 +279,8 @@ border-radius: 30px;
       </div>
     </div>
   </div>
+    <div class="cardabt">
+      <div class="box">
     <div id="ABT" class="About-Me" >
       <div id="aimg">
       <img class="About-Me" src="img/salah.jpg" id="aimg">
@@ -250,6 +292,9 @@ border-radius: 30px;
 </p>
 </div>
     </div>  
+  </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
