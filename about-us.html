@@ -15,7 +15,6 @@
 }
 
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -25,17 +24,17 @@ body {
 
 body .container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: fit-content;
   margin: 40px 0;
 }
 
 body .container .card {
   position: relative;
-  min-width: 360px;
-  height: 503px;
+  min-width: 355px;
+  height: 507px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
@@ -140,6 +139,31 @@ body .container .card .box .content a:hover {
   background: #fff;
   color: #000;
 }
+#aimg{
+  object-fit: cover;
+    border-radius:100%;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem auto;
+    object-position: top; 
+  position: relative;
+}
+#apara{
+  position: relative;
+  margin: 3rem 2rem 1rem 1rem;
+  border: solid rgb(0, 0, 0);
+text-align: center;
+color: rgb(0, 0, 0);
+background-color: rgb(150, 216, 210);
+border-radius: 30px;
+}
+.About-Me{
+  justify-content: center;
+  display: flex;
+  height: 35rem;
+  flex-direction: column;
+
+}
 </style>
 </head>
 <body>
@@ -147,7 +171,7 @@ body .container .card .box .content a:hover {
     <div class="card">
       <div class="box">
         <div class="content">
-          <h2>01</h2>
+          <h2>TS</h2>
           <h3>QuickTest</h3>
           <p>The actual idea to develop this project come from the communication accuracy or
             time saving, just to save time of people throught this specticular thought... i decided
@@ -160,7 +184,7 @@ body .container .card .box .content a:hover {
     <div class="card">
       <div class="box">
         <div class="content">
-          <h2>02</h2>
+          <h2>TS</h2>
           <h3>Tris game</h3>
           <p>A tris game in which words will fall in a container at specified speed, and
             you have to type that words before the drop in container if failed then game over!</p>
@@ -171,7 +195,7 @@ body .container .card .box .content a:hover {
     <div class="card">
       <div class="box">
         <div class="content">
-          <h2>03</h2>
+          <h2>TS</h2>
           <h3>History Section</h3>
           <p>A history section where you can check the previous typing test result by date and time.</p>
           <a href="#">CHECK</a>
@@ -181,7 +205,7 @@ body .container .card .box .content a:hover {
     <div class="card">
       <div class="box">
         <div class="content">
-          <h2>04</h2>
+          <h2>TS</h2>
           <h3>Chat_Bot</h3>
           <p>Chat_Bot will help u and provide some better ways to enhance your typing speed & also u
             can chat or use voice speech with bot for fun!</p>
@@ -192,7 +216,7 @@ body .container .card .box .content a:hover {
     <div class="card">
       <div class="box">
         <div class="content">
-          <h2>05</h2>
+          <h2>TS</h2>
           <h3>Questionnaire</h3>
           <p>Questionnaire will provide the optimized solution by asking some questions related to your
             typing!</p>
@@ -203,17 +227,29 @@ body .container .card .box .content a:hover {
     <div class="card">
       <div class="box">
         <div class="content">
-          <h2>06</h2>
+          <h2>TS</h2>
           <h3>Developer(ME)</h3>
           <p>Interestingly, I have been a student of Poly Technic Computer branch and got introduced to programming
             in my Third Sem of year And At MGM'S college of Engineering, Nanded. Since then, I started developing
             Android Apps And Web Projects and pursuing my Bachelors in Computer Science and Engineering.
             Today, I'm currently working on Self Projects and on the way of my roadmap to become a fullstack
             DEV.</p>
-          <a href="#">SALAH ALKASERI</a>
+          <a href="#ABT">SALAH ALKASERI</a>
         </div>
       </div>
     </div>
+  </div>
+    <div id="ABT" class="About-Me" >
+      <div id="aimg">
+      <img class="About-Me" src="img/salah.jpg" id="aimg">
+    </div>
+<div id="apara" class="About-Me">
+  <p style="font-family:  'Tiro Devanagari Hindi', serif;">
+  Hey there my name is SALAH ALKASERI i like to design responsive websites and playing games. I get ideas by playing games because i relate games with real world things!
+  I am Student of B.Tech CSE Third year at MGM's College of Engineering and have passion of coding from my days of Polytechnic!
+</p>
+</div>
+    </div>  
   </div>
 </body>
 </html>
